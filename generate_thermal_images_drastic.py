@@ -3,7 +3,7 @@
 """
 Created on Sat Dec 12 18:10:32 2020
 
-generate grayscale images of all angles of attack, averaged over 9 timestamps
+test environment
 
 @author: jangrobusch
 """
@@ -34,15 +34,13 @@ def genimage(angle, D):
         basearray = np.concatenate((basearray, sample), axis=2)
     temparray = np.mean(basearray, axis = 2)    #average data
     #normalise
-    mint = np.min(temparray) #Retrieve min, med, and max temps to normalise image
-    temparray = temparray - mint
+    mean = np.mean(temparray)
+    temparray += 1000000000000*(temparray - mean) #number as high as possible without inducing errors
     maxt = np.max(temparray)
-    temparray = temparray * (255/maxt)   
+    temparray = temparray * (255/maxt)
     im = Image.fromarray(temparray)
     im = im.convert("RGB")
     im.save(os.path.join((D+' thermal images'),(angle+ '.jpg')), "JPEG")
-    im.show()
-    sys.exit()
     return()
 
 
