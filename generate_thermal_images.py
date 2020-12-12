@@ -3,7 +3,7 @@
 """
 Created on Sat Dec 12 18:10:32 2020
 
-test environment
+generate grayscale images of all angles of attack, averaged over 9 timestamps
 
 @author: jangrobusch
 """
