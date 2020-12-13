@@ -15,8 +15,8 @@ import os
 
 def getarray(angle, dim): #generates numpy array from saved jpeg files (faster than CSV processing)
     directory = os.path.join(dim+' thermal images', angle+'.jpg') #generate file path  
-    im = Image.open(directory) #read as pillow Image file
-    array = np.asarray(im) #convert pillow Image file to numpy array
+    im = Image.open(directory).convert('L') #read as pillow Image file, convert to grayscale
+    array = np.array(im) #convert pillow Image file to numpy array
     return(array)
 
 #folder name must be pre existing
