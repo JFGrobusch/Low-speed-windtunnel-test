@@ -83,7 +83,6 @@ class datapoint():
         self.AoA = float(self.name.replace('b','')) #for eventual plotting; removes non float character
         if 'b' in self.name: self.back = True #stores whether or not data point belongs to hysteresis
         else: self.back = False
-        self.precession = getprecession(self) #turbulent flow procession value (%) 
 
 import os
 import matplotlib.pyplot as plt
@@ -96,10 +95,11 @@ for dim in ["2D", "3D"]: #3D and 2D will be plotted seperately
     AoA_list = []
     AoA_list_back = [] #initialise lists for plotting
     for datapoint in datapoints:
-        if datapoint.back == False: AoA_list.append([datapoint.AoA,datapoint.precession]) #add data points to plotabble list
-        if datapoint.back == True: AoA_list_back.append([datapoint.AoA,datapoint.precession]) #sort data points into forward and back for color control
+        if datapoint.back == False: AoA_list.append([datapoint.AoA,getprecession(datapoint)]) #add data points to plotabble list
+        if datapoint.back == True: AoA_list_back.append([datapoint.AoA,getprecession(datapoint)]) #sort data points into forward and back for color control
     AoA_list = transpose(AoA_list) #transpose lists to fit matplotlib format
     AoA_list_back = transpose(AoA_list)
     plt.plot(AoA_list)
     plt.plot(AoA_list_back)
+    plt.show()
         
