@@ -12,18 +12,11 @@ modification pending
 @author: jangrobusch
 """
 
-from tools import getarray, savearray
+from tools import getarray, savearray, transpose
 import numpy as np
 from statistics import mean
 
-class datapoint():
-    def __init__(self, angle, dim):
-        self.dim = dim #dimension (2d or 3d)
-        self.name = angle #AoA (deg)
-        self.AoA = float(self.name.replace('b','')) #for eventual plotting; removes non float character
-        if 'b' in self.name: self.back = True #stores whether or not data point belongs to hysteresis
-        else: self.back = False
-        self.precession = None #initially empty; eventually procession value (%) will be stored here
+
 
 def getprecession(datapoint):
     
@@ -78,11 +71,35 @@ def getprecession(datapoint):
         
     transition_points = [] #empty list to store transition points
     for row in diffarray:
-        transition_points.append(processrow(row))
-    datapoint.precession = mean(transition_points)
-    print(datapoint.name, datapoint.dim," has turbulent transition at", round(datapoint.precession) , "% chord")           
+        transition_points.append(processrow(row)) #get transition % from above function
+    datapoint.precession = 100-mean(transition_points) #average transition %, save to object
+    print(datapoint.name, datapoint.dim," has turbulent transition at", round(datapoint.precession) , "% chord from LE")           
     return()
 
-p1 = datapoint("11", "2D")
+class datapoint():
+    def __init__(self, angle, dim):
+        self.dim = dim #dimension (2d or 3d)
+        self.name = angle #AoA (deg)
+        self.AoA = float(self.name.replace('b','')) #for eventual plotting; removes non float character
+        if 'b' in self.name: self.back = True #stores whether or not data point belongs to hysteresis
+        else: self.back = False
+        self.precession = getprecession(self) #turbulent flow procession value (%) 
 
-getprecession(p1)
+import os
+import matplotlib.pyplot as plt
+for dim in ["2D", "3D"]: #3D and 2D will be plotted seperately
+    datapoints = []
+    angles = os.listdir(os.path.join('Thermal Data', dim)) #retrieve all angles via directory
+    if '.DS_Store' in angles: angles.remove('.DS_Store') #this file is generated as hidden sometimes; this line removes it
+    for angle in angles: 
+        datapoints.append(datapoint(angle, dim)) #this will take a while; getprecession is run when initialising the data point
+    AoA_list = []
+    AoA_list_back = [] #initialise lists for plotting
+    for datapoint in datapoints:
+        if datapoint.back == False: AoA_list.append([datapoint.AoA,datapoint.precession]) #add data points to plotabble list
+        if datapoint.back == True: AoA_list_back.append([datapoint.AoA,datapoint.precession]) #sort data points into forward and back for color control
+    AoA_list = transpose(AoA_list) #transpose lists to fit matplotlib format
+    AoA_list_back = transpose(AoA_list)
+    plt.plot(AoA_list)
+    plt.plot(AoA_list_back)
+        

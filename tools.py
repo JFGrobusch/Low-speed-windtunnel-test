@@ -26,6 +26,12 @@ def savearray(array, folder_name, angle, dim): #saves numpy array as jpeg file i
     im.save(os.path.join((dim+' '+folder_name),(angle+ '.jpg')), "JPEG") #generate image and save to indicated folder
     return()
 
+def transpose(inlist): #transposes a python list: do not use this with larger lists, very inefficient
+    array = np.array(inlist)
+    transpose = array.T
+    outlist = transpose.tolist()
+    return(outlist)
+
 D = "3D"
 angle = "0"
 savearray(getarray(angle,D), "test", angle, D)
