@@ -72,9 +72,9 @@ def getprecession(datapoint):
     transition_points = [] #empty list to store transition points
     for row in diffarray:
         transition_points.append(processrow(row)) #get transition % from above function
-    datapoint.precession = 100-mean(transition_points) #average transition %, save to object
-    print(datapoint.name, datapoint.dim," has turbulent transition at", round(datapoint.precession) , "% chord from LE")           
-    return()
+    precession = 100-mean(transition_points) #average transition %, save to object
+    print(datapoint.name, datapoint.dim," has turbulent transition at", round(precession) , "% chord from LE")           
+    return(precession)
 
 class datapoint():
     def __init__(self, angle, dim):
