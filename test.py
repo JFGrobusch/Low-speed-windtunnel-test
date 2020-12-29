@@ -34,8 +34,8 @@ def genimage(angle, D):
         basearray = np.concatenate((basearray, sample), axis=2)
     temparray = np.mean(basearray, axis = 2)    #average data
     #normalise
-    mint = np.min(temparray) #Retrieve min and max temps to normalise image
-    temparray = temparray - mint
+    mean = np.mean(temparray)
+    temparray += 10000*(temparray - mean)
     maxt = np.max(temparray)
     temparray = temparray * (255/maxt)
     im = Image.fromarray(temparray)

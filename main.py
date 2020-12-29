@@ -15,6 +15,7 @@ modification pending
 from tools import getarray, savearray, transpose
 import numpy as np
 from statistics import mean
+import sys
 
 
 
@@ -76,30 +77,52 @@ def getprecession(datapoint):
     print(datapoint.name, datapoint.dim," has turbulent transition at", round(precession) , "% chord from LE")           
     return(precession)
 
-class datapoint():
+class init(): #datapoint class, stores relevant data
     def __init__(self, angle, dim):
         self.dim = dim #dimension (2d or 3d)
         self.name = angle #AoA (deg)
         self.AoA = float(self.name.replace('b','')) #for eventual plotting; removes non float character
         if 'b' in self.name: self.back = True #stores whether or not data point belongs to hysteresis
         else: self.back = False
+        self.precession = None
 
 import os
-import matplotlib.pyplot as plt
-for dim in ["2D", "3D"]: #3D and 2D will be plotted seperately
-    datapoints = []
+datapoints = []
+for dim in ["2D", "3D"]: #generate data for 3D and 2D
     angles = os.listdir(os.path.join('Thermal Data', dim)) #retrieve all angles via directory
     if '.DS_Store' in angles: angles.remove('.DS_Store') #this file is generated as hidden sometimes; this line removes it
-    for angle in angles: 
-        datapoints.append(datapoint(angle, dim)) #this will take a while; getprecession is run when initialising the data point
-    AoA_list = []
-    AoA_list_back = [] #initialise lists for plotting
+    for angle in angles:
+        datapoint = init(angle, dim)
+        datapoints.append(datapoint)
     for datapoint in datapoints:
-        if datapoint.back == False: AoA_list.append([datapoint.AoA,getprecession(datapoint)]) #add data points to plotabble list
-        if datapoint.back == True: AoA_list_back.append([datapoint.AoA,getprecession(datapoint)]) #sort data points into forward and back for color control
-    AoA_list = transpose(AoA_list) #transpose lists to fit matplotlib format
-    AoA_list_back = transpose(AoA_list)
-    plt.plot(AoA_list)
-    plt.plot(AoA_list_back)
-    plt.show()
+        datapoint.precession = getprecession(datapoint) #calculates precession
+
+datalist = [['Dim', 'AoA', 'Precession %', 'Back']] #extracting data for processing (more stable)      
+for datapoint in datapoints:
+    data = datapoint.dim, datapoint.AoA, datapoint.precession, datapoint.back
+    datalist.append(data) #code self explanatory
+
+# import xlsxwriter library: install this package if not already installed
+import xlsxwriter 
+  
+# initialise file
+file = xlsxwriter.Workbook('data.xlsx') 
+sheet = file.add_worksheet()
+
+#set row index to 0
+row = 0
+col = 0
+print("Writing to XLSX file")
+for dim, aoa, precession, back in (datalist):
+    sheet.write(row, col, dim)
+    sheet.write(row, col+1, aoa)
+    sheet.write(row, col+2, precession)    
+    sheet.write(row, col+3, back)
+    row += 1
+
+file.close()    
+    
+    
+
+    
         
