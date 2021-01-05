@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="airfoil_plot.py created" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Jan" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lSrT6nMHO7AmdjnaM9bK1EYm1x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Python" type="PythonConfigurationType" factoryName="Python">
+      <module name="AE2130-II" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Jirka\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="" />
+      <created>1607601337738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607601337738</updated>
+      <workItem from="1607951051112" duration="97000" />
+      <workItem from="1607951292694" duration="32000" />
+      <workItem from="1608031185716" duration="1153000" />
+    </task>
+    <task id="LOCAL-00001" summary="main.py test commit">
+      <created>1607601368605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607601368605</updated>
+    </task>
+    <task id="LOCAL-00002" summary="airfoil_plot.py created">
+      <created>1609229246186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609229246186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main.py test commit" />
+    <MESSAGE value="Merge branch 'Jan' into george" />
+    <MESSAGE value="Merge branch 'Jan' into george&#10;&#10;# Conflicts:&#10;#&#9;.DS_Store&#10;#&#9;2D thermal images/.DS_Store&#10;#&#9;2D thermal images/12.5b.jpg&#10;#&#9;2D thermal images/12b.jpg&#10;#&#9;2D thermal images/13.5b.jpg&#10;#&#9;2D thermal images/13b.jpg&#10;#&#9;2D thermal images/14.5b.jpg&#10;#&#9;2D thermal images/14b.jpg&#10;#&#9;2D thermal images/15.5b.jpg&#10;#&#9;2D thermal images/15b.jpg&#10;#&#9;2D thermal images/16.5b.jpg&#10;#&#9;2D thermal images/16b.jpg&#10;#&#9;2D thermal images/17.5b.jpg&#10;#&#9;2D thermal images/17b.jpg&#10;#&#9;3D thermal images/.DS_Store&#10;#&#9;3D thermal images/14.5b.jpg&#10;#&#9;3D thermal images/15.5b.jpg&#10;#&#9;3D thermal images/15b.jpg&#10;#&#9;3D thermal images/16.5b.jpg&#10;#&#9;Thermal Data/.DS_Store&#10;#&#9;Thermal Data/2D/.DS_Store&#10;#&#9;Thermal Data/3D/.DS_Store&#10;#&#9;generate_thermal_images_drastic.py&#10;#&#9;procedure.rtf" />
+    <MESSAGE value="airfoil_plot.py created" />
+    <option name="LAST_COMMIT_MESSAGE" value="airfoil_plot.py created" />
+  </component>
+</project>
