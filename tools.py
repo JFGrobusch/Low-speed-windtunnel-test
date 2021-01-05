@@ -22,7 +22,7 @@ def getarray(angle, dim): #generates numpy array from saved jpeg files (faster t
 #folder name must be pre existing
 def savearray(array, folder_name, angle, dim): #saves numpy array as jpeg file into specified folder with correct nomenclature
     im = Image.fromarray(array) #generate pillow image from array
-    im.convert("RGB")   #specify image type to pillow
+    # im.convert("RGB")   #specify image type to pillow
     im.save(os.path.join((dim+' '+folder_name),(angle+ '.jpg')), "JPEG") #generate image and save to indicated folder
     return()
 
@@ -32,6 +32,3 @@ def transpose(inlist): #transposes a python list: do not use this with larger li
     outlist = transpose.tolist()
     return(outlist)
 
-D = "3D"
-angle = "0"
-savearray(getarray(angle,D), "test", angle, D)
