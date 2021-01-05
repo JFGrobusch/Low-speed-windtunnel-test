@@ -18,21 +18,40 @@ df = df.drop(0)  # drops the row with dashed lines from XFoil
 # df.to_csv("sim2.csv", sep=" ", columns=["alpha"])
 # now the dataframe has a first row designated with 1 instead of 0
 
-lst_alpha = df.alpha.to_numpy()  # the data is in strings by default
-lst_alpha = np.array([float(i) for i in lst_alpha])  # convert
+alpha = df.alpha.to_numpy()  # the data is in strings by default
+alpha = np.array([float(i) for i in alpha])  # convert
 
-lst_CL = df.CL.to_numpy()  # the data is in strings by default
-lst_CL = np.array([float(i) for i in lst_CL])  # convert
+CL = df.CL.to_numpy()  # the data is in strings by default
+CL = np.array([float(i) for i in CL])  # convert
 
-lst_CD = df.CD.to_numpy()  # the data is in strings by default
-lst_CD = np.array([float(i) for i in lst_CD])  # convert
+CD = df.CD.to_numpy()  # the data is in strings by default
+CD = np.array([float(i) for i in CD])  # convert
 
-plt.plot(lst_alpha, lst_CL)
-plt.title("Alpha vs. CL")
-plt.legend("CL")
-plt.xlabel("Angle of attack [deg]")
-plt.ylabel("Coefficient of lift [-]")
-plt.show()
+CM = df.CM.to_numpy()  # the data is in strings by default
+CM = np.array([float(i) for i in CM])  # convert
 
-# df.plot(x="CD", y="CL", kind="scatter")
+# plt.plot(alpha, CL)
+# plt.title("Alpha vs. CL")
+# plt.legend("CL")
+# plt.xlabel("Angle of attack [deg]")
+# plt.ylabel("Coefficient of lift [-]")
 # plt.show()
+
+fig, axs = plt.subplots(2, 2)
+fig.suptitle('XFoil Simulation Results')
+fig.tight_layout(pad=3)
+axs[0, 0].plot(alpha, CL)
+axs[0, 0].set_title('CL vs. alpha')
+axs[0, 1].plot(CL, CD, 'tab:orange')
+axs[0, 1].set_title('CD vs. CL')
+axs[1, 0].plot(alpha, CM, 'tab:green')
+axs[1, 0].set_title('CM vs. alpha')
+axs[1, 1].plot(alpha, CD, 'tab:red')
+axs[1, 1].set_title('CD vs. alpha cause why not')
+
+axs[0, 0].set(xlabel="Angle of attack [deg]", ylabel="Coefficient of lift [-]")
+axs[0, 1].set(xlabel="Coefficient of lift [-]", ylabel="Coefficient of drag [-]")
+axs[1, 0].set(xlabel="Angle of attack [deg]", ylabel="Coefficient of moment [-]")
+axs[1, 1].set(xlabel="Angle of attack [deg]", ylabel="Coefficient of drag [-]")
+
+fig.show()
