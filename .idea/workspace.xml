@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/XFoil/airfoil_plotcp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XFoil/airfoil_plottr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XFoil/simcp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XFoil/airfoil_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/XFoil/airfoil_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XFoil/airfoil_plotnew.py" beforeDir="false" afterPath="$PROJECT_DIR$/XFoil/airfoil_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XFoil/sim2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XFoil/sim4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XFoil/simvs2d.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Jan" />
+        <entry key="$PROJECT_DIR$" value="george" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,29 +44,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.airfoil_plot">
-    <configuration name="D57" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AE2130-II" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../WP5" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../WP5/D57.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Genetics_variance-" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Plotter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AE2130-II" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,7 +57,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XFoil/Genetics_variance-.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XFoil/Plotter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="airfoil_plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AE2130-II" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +123,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XFoil/test.py" />
+      <option name="SCRIPT_NAME" value="D:\GitHub\AE2130-II\XFoil\airfoil_plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="xfoil_dat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="airfoil_plotcp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AE2130-II" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,12 +140,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/python_Xfoil_Genetics_src" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XFoil" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/python_Xfoil_Genetics_src/xfoil_dat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XFoil/airfoil_plotcp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_analysis_2D" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AE2130-II" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XFoil" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XFoil/data_analysis_2D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,10 +179,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.airfoil_plot" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.D57" />
-        <item itemvalue="Python.xfoil_dat" />
-        <item itemvalue="Python.Genetics_variance-" />
+        <item itemvalue="Python.airfoil_plotcp" />
+        <item itemvalue="Python.airfoil_plotnew" />
+        <item itemvalue="Python.data_analysis_2D" />
+        <item itemvalue="Python.Plotter" />
       </list>
     </recent_temporary>
   </component>
@@ -266,10 +272,14 @@
     <SUITE FILE_PATH="coverage/airfoil_plot_py$D57.coverage" NAME="D57 Coverage Results" MODIFIED="1609837685867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../WP5" />
     <SUITE FILE_PATH="coverage/AE2130_II$Genetics_variance_.coverage" NAME="Genetics_variance- Coverage Results" MODIFIED="1609267324875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609275838101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plotnew.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609849320482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$GenAirfoil.coverage" NAME="GenAirfoil Coverage Results" MODIFIED="1609266366632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../School/Second Year/Aero/Wind_Tunnel/Python" />
-    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609843818149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$xfoil_dat__1_.coverage" NAME="xfoil_dat (1) Coverage Results" MODIFIED="1609267191743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$cygwinccompiler.coverage" NAME="cygwinccompiler Coverage Results" MODIFIED="1609237997163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/distutils" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plotcp.coverage" NAME="airfoil_plotcp Coverage Results" MODIFIED="1609883932493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$data_analysis_2D.coverage" NAME="data_analysis_2D Coverage Results" MODIFIED="1609844201497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$Plotter.coverage" NAME="Plotter Coverage Results" MODIFIED="1609844112772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609884501068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$xfoil_dat.coverage" NAME="xfoil_dat Coverage Results" MODIFIED="1609267574602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/python_Xfoil_Genetics_src" />
   </component>
 </project>
