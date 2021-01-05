@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="Plots initial commit">
+    <list default="true" id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XFoil/airfoil_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/XFoil/airfoil_plot.py" afterDir="false" />
     </list>
@@ -194,7 +194,7 @@
       <workItem from="1609229515188" duration="485000" />
       <workItem from="1609230038508" duration="1373000" />
       <workItem from="1609236592583" duration="14710000" />
-      <workItem from="1609833560210" duration="6205000" />
+      <workItem from="1609833560210" duration="7785000" />
     </task>
     <task id="LOCAL-00001" summary="main.py test commit">
       <created>1607601368605</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609838850853</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Subplots implemented">
+      <created>1609839957852</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609839957852</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +258,8 @@
     <MESSAGE value="airfoil_plot.py created" />
     <MESSAGE value="XFoil stuff done&#10;Plotting in Python" />
     <MESSAGE value="Plots initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plots initial commit" />
+    <MESSAGE value="Subplots implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subplots implemented" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/airfoil_plot_py$test.coverage" NAME="test Coverage Results" MODIFIED="1609837819738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
@@ -259,7 +267,7 @@
     <SUITE FILE_PATH="coverage/AE2130_II$Genetics_variance_.coverage" NAME="Genetics_variance- Coverage Results" MODIFIED="1609267324875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609275838101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$GenAirfoil.coverage" NAME="GenAirfoil Coverage Results" MODIFIED="1609266366632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../School/Second Year/Aero/Wind_Tunnel/Python" />
-    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609839814424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
+    <SUITE FILE_PATH="coverage/airfoil_plot_py$airfoil_plot.coverage" NAME="airfoil_plot Coverage Results" MODIFIED="1609843818149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$xfoil_dat__1_.coverage" NAME="xfoil_dat (1) Coverage Results" MODIFIED="1609267191743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XFoil" />
     <SUITE FILE_PATH="coverage/AE2130_II$cygwinccompiler.coverage" NAME="cygwinccompiler Coverage Results" MODIFIED="1609237997163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/distutils" />
     <SUITE FILE_PATH="coverage/AE2130_II$xfoil_dat.coverage" NAME="xfoil_dat Coverage Results" MODIFIED="1609267574602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/python_Xfoil_Genetics_src" />
