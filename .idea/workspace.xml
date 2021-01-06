@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e838b9-6e33-4490-a306-9e8fcd0b08b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XFoil/airfoil_plotcp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XFoil/airfoil_plottr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XFoil/simcp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XFoil/airfoil_plotnew.py" beforeDir="false" afterPath="$PROJECT_DIR$/XFoil/airfoil_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XFoil/sim2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XFoil/sim4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XFoil/simvs2d.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XFoil/airfoil_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/XFoil/airfoil_plot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609839957852</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Subplots implemented">
+      <created>1609885892634</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609885892634</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
